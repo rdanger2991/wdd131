@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Renil Danger</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals. Renil Danger. A personal landing page for web development fundamentals course with links to resources and personal information.">
+    <meta name="author" content="Renil Danger">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD-131 Danger</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Renil Danger</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/renil-danger-7bb03a125/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="finalProject/">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <div class="text-content">
+                    <p>My name is Renil Danger and I live in Port-au-Prince, the capital of Haiti. I am currently
+                        studying web development and
+                        working towards becoming a professional developer. I enjoy coding, solving problems, and
+                        creating useful web applications.</p>
+                    <p>When I'm not coding, I love to read, watch TV and play video games. I believe that continuous
+                        learning is essential in
+                        the field of web development.</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/profile.jpg" alt="Renil Danger Profile Picture">
+                </div>
+            </div>
+            <!-- Placez le h3 ici, à l'extérieur des autres divs -->
+            <h3 class="location-title">Port-au-Prince, Haiti</h3>
+            <div class="location-info">
+                <div class="flag-container">
+                    <img src="images/flag.png" alt="Flag of Haiti">
+                    <p>Official Flag of Haiti</p>
+                </div>
+                <div class="location-description">
+                    <p>Haiti is a Caribbean country that shares the island of Hispaniola with the Dominican Republic. It
+                        is the second-oldest republic in the Western Hemisphere and the first independent nation in
+                        Latin America. Haiti covers 27,750 square kilometers (10,714 sq mi) and is home to approximately
+                        11 million people.</p>
+                    <p>Haiti has a rich cultural heritage, being the first Black-led republic in the world when it
+                        gained independence from France in 1804. The country is known for its vibrant art, music
+                        (particularly Kompa), literature, and religious traditions including Vodou. Haiti's landscape
+                        features beautiful mountain ranges, with the highest peak being Pic la Selle at 2,680 meters
+                        (8,793 ft), as well as coastal plains and valleys.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌴 Renil Danger, Port-au-Prince, Haïti 🌴</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
